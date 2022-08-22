@@ -1,0 +1,22 @@
+{
+  "name": "api_node",
+  "version": "1.0.0",
+  "description": "Primerira versão api em Node",
+  "main": ".dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":  "node  ./",
+    "build": "tsc -p ."
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knoppf1/apiNode.git"
+  },
+  "author": "Fabiano Kerstner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knoppf1/apiNode/issues"
+  },
+  "homepage": "https://github.com/knoppf1/apiNode#readme"
+}
