@@ -2,12 +2,12 @@
   "name": "api_node",
   "version": "1.0.0",
   "description": "Primerira versão api em Node",
-  "main": ".dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":  "node  ./",
-    "build": "tsc -p ."
-    
+    "start": "node  ./",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/knoppf1/apiNode/issues"
   },
-  "homepage": "https://github.com/knoppf1/apiNode#readme"
+  "homepage": "https://github.com/knoppf1/apiNode#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^2.0.0"
+  }
 }
